@@ -15,7 +15,7 @@ export default function HomePage() {
           <h1 className="text-6xl font-bold text-teal-800 dark:text-teal-500 text-center mb-8">
             Paweł J. Wal
           </h1>
-          <h2 className="text-4xl font-bold text-teal-700 dark:text-teal-600 text-center mb-8">
+          <h2 className="text-4xl font-bold text-teal-800 dark:text-teal-500 text-center mb-8">
             hacker, builder, software engineer, nerd
           </h2>
           <p className="text-center mt-4 text-2xl" title="e-mail">

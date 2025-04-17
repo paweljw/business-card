@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import { type Metadata } from "next";
 import { Atkinson_Hyperlegible } from "next/font/google";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Hi! | Paweł J. Wal",
@@ -11,14 +12,15 @@ export const metadata: Metadata = {
     { rel: "apple-touch-icon", url: "/apple-touch-icon.png" },
     { rel: "icon", type: "image/png", url: "/favicon-32x32.png" },
     { rel: "icon", type: "image/png", url: "/favicon-16x16.png" },
-    { rel: "manifest", url: "/site.webmanifest" },
   ],
+  manifest: "/site.webmanifest",
 };
 
 const atkinson = Atkinson_Hyperlegible({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-atkinson",
   weight: ["400", "700"],
+  preload: true,
 });
 
 export default function RootLayout({
@@ -26,6 +28,14 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`bg-gray-200 dark:bg-slate-800 ${atkinson.variable}`}>
+      <head>
+        <link
+          rel="preload"
+          href="/face.png"
+          as="image"
+          type="image/png"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

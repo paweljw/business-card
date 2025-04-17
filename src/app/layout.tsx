@@ -2,7 +2,6 @@ import "~/styles/globals.css";
 
 import { type Metadata } from "next";
 import { Atkinson_Hyperlegible } from "next/font/google";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Hi! | Paweł J. Wal",
@@ -27,14 +26,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`bg-gray-200 dark:bg-slate-800 ${atkinson.variable}`}>
+    <html
+      lang="en"
+      className={`bg-gray-200 dark:bg-slate-800 ${atkinson.variable}`}
+    >
       <head>
-        <link
-          rel="preload"
-          href="/face.png"
-          as="image"
-          type="image/png"
-        />
+        <link rel="preload" href="/face.png" as="image" type="image/png" />
       </head>
       <body>{children}</body>
     </html>

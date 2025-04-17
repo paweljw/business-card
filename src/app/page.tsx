@@ -8,7 +8,9 @@ export default function HomePage() {
           <img
             src="/face.png"
             alt="Paweł J. Wal's face"
-            className="block md:hidden mx-auto mb-8 w-30 h-30 rounded-full object-cover"
+            className="block md:hidden mx-auto mb-8 w-30 h-30 rounded-full object-cover bg-teal-100 dark:bg-teal-900"
+            width={120}
+            height={120}
           />
           <h1 className="text-6xl font-bold text-teal-800 dark:text-teal-500 text-center mb-8">
             Paweł J. Wal
@@ -68,7 +70,9 @@ export default function HomePage() {
         <img
           src="/face.png"
           alt="Paweł J. Wal's face"
-          className="hidden md:block md:mx-auto md:absolute md:-right-15 md:-top-15 w-30 h-30 rounded-full object-cover shadow-2xl"
+          className="hidden md:block md:mx-auto md:absolute md:-right-15 md:-top-15 w-30 h-30 rounded-full object-cover shadow-2xl bg-white dark:bg-slate-600 border-white dark:border-slate-600"
+          width={120}
+          height={120}
         />
       </div>
     </div>

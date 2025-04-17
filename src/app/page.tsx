@@ -42,6 +42,16 @@ export default function HomePage() {
               cooling.coffee
             </Link>
           </p>
+          <p className="text-center mt-4 text-2xl" title="source code">
+            🧑🏻‍💻 <span className="sr-only">source code</span>{" "}
+            <Link
+              href="https://github.com/paweljw"
+              target="_blank"
+              rel="me noopener noreferrer"
+            >
+              github.com/paweljw
+            </Link>
+          </p>
           <p className="text-center mt-4 text-2xl">
             👷🏻‍♂️ <span className="sr-only">stuff I worked on</span>{" "}
             <Link href="https://betterstack.com" target="_blank">

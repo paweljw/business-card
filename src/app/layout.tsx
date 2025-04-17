@@ -25,7 +25,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${atkinson.variable}`}>
+    <html lang="en" className={`bg-gray-200 dark:bg-slate-800 ${atkinson.variable}`}>
       <body>{children}</body>
     </html>
   );

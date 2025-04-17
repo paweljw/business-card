@@ -2,36 +2,65 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
+    <div className="flex min-h-screen flex-col items-center justify-center">
+      <div className="relative w-full md:w-1/2 lg:w-1/3">
+        <main className="md:max-h-[90vh] bg-white p-8 rounded-4xl shadow-2xl dark:bg-slate-600">
+          <img
+            src="/face.png"
+            alt="Paweł J. Wal's face"
+            className="block md:hidden mx-auto mb-8 w-30 h-30 rounded-full object-cover"
+          />
+          <h1 className="text-6xl font-bold text-teal-800 dark:text-teal-500 text-center mb-8">
+            Paweł J. Wal
+          </h1>
+          <h2 className="text-4xl font-bold text-teal-700 dark:text-teal-600 text-center mb-8">
+            hacker, builder, software engineer, nerd
+          </h2>
+          <p className="text-center mt-4 text-2xl" title="e-mail">
+            📩<span className="sr-only">e-mail</span>{" "}
+            <Link href="mailto:pawel@cooling.coffee" target="_blank">
+              pawel@cooling.coffee
+            </Link>
+          </p>
+          <p className="text-center mt-4 text-2xl" title="linkedin">
+            👤 <span className="sr-only">linkedin</span>{" "}
+            <Link
+              href="https://www.linkedin.com/in/paweł-wal/"
+              target="_blank"
+              rel="me noopener noreferrer"
+            >
+              linkedin.com/in/paweł-wal
+            </Link>
+          </p>
+          <p className="text-center mt-4 text-2xl" title="blog">
+            📤 <span className="sr-only">blog</span>{" "}
+            <Link
+              href="https://cooling.coffee"
+              target="_blank"
+              rel="me noopener noreferrer"
+            >
+              cooling.coffee
+            </Link>
+          </p>
+          <p className="text-center mt-4 text-2xl">
+            👷🏻‍♂️ <span className="sr-only">stuff I worked on</span>{" "}
+            <Link href="https://betterstack.com" target="_blank">
+              Better Stack
+            </Link>{" "}
+            <Link href="https://measure.studio" target="_blank">
+              Measure Studio
+            </Link>{" "}
+            <Link href="https://planetgolang.dev" target="_blank">
+              Planet Golang
+            </Link>{" "}
+          </p>
+        </main>
+        <img
+          src="/face.png"
+          alt="Paweł J. Wal's face"
+          className="hidden md:block md:mx-auto md:absolute md:-right-15 md:-top-15 w-30 h-30 rounded-full object-cover shadow-2xl"
+        />
       </div>
-    </main>
+    </div>
   );
 }

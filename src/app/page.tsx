@@ -23,7 +23,12 @@ export default function HomePage() {
             📩<span className="sr-only">e-mail</span>{" "}
             <Link href="mailto:pawel@cooling.coffee" target="_blank">
               pawel@cooling.coffee
+            </Link>{" "}
+            (
+            <Link href="/Paweł J. Wal (7D67CE8A).asc" target="_blank">
+              GPG
             </Link>
+            )
           </p>
           <p className="mt-4 text-center text-2xl" title="linkedin">
             👤 <span className="sr-only">linkedin</span>{" "}

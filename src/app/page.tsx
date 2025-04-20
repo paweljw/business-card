@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center">
       <div className="relative w-full md:w-1/2 lg:w-1/3">
-        <main className="rounded-4xl bg-white p-8 shadow-2xl md:max-h-[90vh] dark:bg-slate-600">
+        <main className="bg-white p-6 md:max-h-[90vh] md:rounded-4xl md:p-8 md:shadow-2xl dark:bg-slate-600">
           <Image
             src="/face.png"
             alt="Paweł J. Wal's face"
@@ -60,17 +60,43 @@ export default function HomePage() {
               github.com/paweljw
             </Link>
           </p>
-          <p className="mt-4 text-center text-2xl">
-            👷🏻‍♂️ <span className="sr-only">stuff I worked on</span>{" "}
+          <p
+            className="mt-4 text-center text-2xl"
+            title="current projects and companies"
+          >
+            👷🏻‍♂️ <span className="sr-only">current projects and companies</span>{" "}
             <Link href="https://betterstack.com" target="_blank">
               Better Stack
-            </Link>{" "}
-            <Link href="https://measure.studio" target="_blank">
+            </Link>
+          </p>
+          <p
+            className="mt-4 text-center text-2xl"
+            title="past projects and companies"
+          >
+            ⌛ <span className="sr-only">past projects and companies</span>{" "}
+            <Link
+              href="https://measure.studio"
+              target="_blank"
+              className="opacity-70"
+            >
               Measure Studio
-            </Link>{" "}
-            <Link href="https://planetgolang.dev" target="_blank">
+            </Link>
+            <br />
+            <Link
+              href="https://planetgolang.dev"
+              target="_blank"
+              className="opacity-60"
+            >
               Planet Golang
-            </Link>{" "}
+            </Link>
+            <br />
+            <Link
+              href="https://thecodest.co/"
+              target="_blank"
+              className="opacity-50"
+            >
+              The Codest
+            </Link>
           </p>
         </main>
         <Image

@@ -17,7 +17,7 @@ export default function HomePage() {
             Paweł J. Wal
           </h1>
           <h2 className="mb-8 text-center text-4xl font-bold text-teal-800 dark:text-teal-500">
-            hacker, builder, software engineer, nerd
+            hacker, builder, software engineer
           </h2>
           <p className="mt-4 text-center text-2xl" title="e-mail">
             📩<span className="sr-only">e-mail</span>{" "}
@@ -30,14 +30,14 @@ export default function HomePage() {
             </Link>
             )
           </p>
-          <p className="mt-4 text-center text-2xl" title="linkedin">
-            👤 <span className="sr-only">linkedin</span>{" "}
+          <p className="mt-4 text-center text-2xl" title="bluesky">
+            🦋 <span className="sr-only">bluesky</span>{" "}
             <Link
-              href="https://www.linkedin.com/in/paweł-wal/"
+              href="https://bsky.app/profile/paweljw.al"
               target="_blank"
               rel="me noopener noreferrer"
             >
-              linkedin.com/in/paweł-wal
+              bluesky: paweljw.al
             </Link>
           </p>
           <p className="mt-4 text-center text-2xl" title="blog">

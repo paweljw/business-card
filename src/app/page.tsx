@@ -30,24 +30,14 @@ export default function HomePage() {
             </Link>
             )
           </p>
-          <p className="mt-4 text-center text-2xl" title="bluesky">
-            🦋 <span className="sr-only">bluesky</span>{" "}
-            <Link
-              href="https://bsky.app/profile/paweljw.al"
-              target="_blank"
-              rel="me noopener noreferrer"
-            >
-              bluesky: paweljw.al
-            </Link>
-          </p>
           <p className="mt-4 text-center text-2xl" title="blog">
             📤 <span className="sr-only">blog</span>{" "}
             <Link
-              href="https://cooling.coffee"
+              href="https://pjw.lol"
               target="_blank"
               rel="me noopener noreferrer"
             >
-              cooling.coffee
+              pjw.lol
             </Link>
           </p>
           <p className="mt-4 text-center text-2xl" title="source code">
